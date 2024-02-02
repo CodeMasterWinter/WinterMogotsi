@@ -9,3 +9,12 @@ def index(request):
     }
 
     return render(request, "WinterMogotsi/index.html", context)
+
+
+def contact(request):
+
+    context = {
+
+    }
+
+    return render(request, "WinterMogotsi/contact.html", context)

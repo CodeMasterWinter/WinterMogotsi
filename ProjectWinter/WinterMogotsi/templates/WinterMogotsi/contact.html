@@ -29,15 +29,10 @@
     <title>Winter Mogotsi - Front-End Developer</title>
 </head>
 <body>
-    <button type="button" id="nav-toggle" class="d-md-none"><i class="fa-solid fa-bars"></i></button>
+    <button type="button" id="nav-toggle"><i class="fa-solid fa-bars"></i></button>
     <header>
-        <div class="container header-container">
-            <img src="{% static 'WinterMogotsi/images/winter-placeholder.png' %}" class="img-fluid floating-head" alt="Rhulani Mogotsi, Full Stack Developer">
-            <h1 class="header-title text-center mt-5">Rhulani Mogotsi</h1>
-            <h3 class="header-tagline text-center mt-5">Full-stack developer</h3>
-        </div>
     </header>
-    <nav id="responsive-nav" class="hide-nav d-md-none">
+    <nav id="nav" class="hide-nav">
         <ul class="nav-list">
             <li class="nav-item px-3 py-3 ms-4">
                 <a href="#" class="nav-link">Hobbies</a>
@@ -45,37 +40,17 @@
             <li class="nav-item px-3 py-3 ms-4">
                 <a href="#" class="nav-link">Experience</a>
             </li>
-            <li class="nav-item px-3 py-3 ms-4 active">
+            <li class="nav-item px-3 py-3 ms-4">
                 <a href="{% url 'home' %}" class="nav-link">Winter Mogotsi</a>
             </li>
             <li class="nav-item px-3 py-3 ms-4">
                 <a href="#" class="nav-link">My Work</a>
             </li>
-            <li class="nav-item px-3 py-3 ms-4">
-                <a href="{% url 'contact' %}" class="nav-link">Contact</a>
-            </li>
-        </ul>
-    </nav>
-    <nav id="nav" class="d-sm-none d-md-block">
-        <ul class="nav-list">
-            <li class="nav-item px-3 py-3 ms-4">
-                <a href="#" class="nav-link">Hobbies</a>
-            </li>
-            <li class="nav-item px-3 py-3 ms-4">
-                <a href="#" class="nav-link">Experience</a>
-            </li>
             <li class="nav-item px-3 py-3 ms-4 active">
-                <a href="{% url 'home' %}" class="nav-link">Winter Mogotsi</a>
-            </li>
-            <li class="nav-item px-3 py-3 ms-4">
-                <a href="#" class="nav-link">My Work</a>
-            </li>
-            <li class="nav-item px-3 py-3 ms-4">
                 <a href="{% url 'contact' %}" class="nav-link">Contact</a>
             </li>
         </ul>
     </nav>
-    </div>
     <script src="{% static 'WinterMogotsi/index.js' %}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
